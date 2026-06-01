@@ -31,6 +31,9 @@ export const copy = {
     stat3: b('Ανά άτομο', 'Per person'),
     cta:   b('Τηλεφωνήστε μας', 'Call us'),
   },
+  quote: {
+    text: b('Κάθε γεύμα, μια ανάμνηση καλοκαιριού.', 'Every meal, a summer memory.'),
+  },
   gallery: {
     label:   b('Gallery', 'Gallery'),
     title1:  b('Αφήστε τις ', 'Let the '),
@@ -56,7 +59,9 @@ export const copy = {
     titleEm: b('δίπλα στη θάλασσα', 'to seeing you by the sea'),
   },
   footer: {
-    privacy: b('Πολιτική Απορρήτου', 'Privacy Policy'),
-    terms:   b('Όροι Χρήσης', 'Terms of Use'),
+    privacy:  b('Πολιτική Απορρήτου', 'Privacy Policy'),
+    terms:    b('Όροι Χρήσης', 'Terms of Use'),
+    tagline:  b('Δίπλα στη θάλασσα, Ανάβυσσος', 'By the sea, Anavissos'),
+    follow:   b('Ακολουθήστε μας', 'Follow us'),
   },
 }

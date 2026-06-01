@@ -48,9 +48,13 @@ export default function Gallery() {
         </h2>
       </div>
       <div className="gallery-grid">
-        {images.map((img) => (
+        {images.map((img, idx) => (
           <div className={`gitem ${img.cls}`} key={img.cls}>
             <img src={img.url} alt={img.alt} />
+            <div className="gitem-overlay">
+              <span className="gitem-num">0{idx + 1}</span>
+              <span className="gitem-caption">{img.alt}</span>
+            </div>
           </div>
         ))}
       </div>

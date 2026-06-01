@@ -41,7 +41,18 @@ export default function Footer() {
               <circle cx="12" cy="12" r="5" />
               <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
             </svg>
-            @theros_by_the_sea
+            Instagram
+          </a>
+          <a
+            href="https://www.tiktok.com/@theros_by_the_sea"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-ig"
+          >
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style={{ flexShrink: 0 }}>
+              <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.94a8.16 8.16 0 0 0 4.77 1.52V7.02a4.85 4.85 0 0 1-1-.33z"/>
+            </svg>
+            TikTok
           </a>
           <div className="footer-legal">
             <Link href="/privacy" className="footer-legal-link">{tr(copy.footer.privacy, lang)}</Link>

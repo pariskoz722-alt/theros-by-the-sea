@@ -1,17 +1,17 @@
 'use client'
-/* eslint-disable @next/next/no-img-element */
 import { useEffect, useState } from 'react'
+import Image from 'next/image'
 import { createClient } from '@/lib/supabase/client'
 import type { GalleryImage } from '@/lib/types'
 import { useLang } from './LanguageContext'
 import { copy, tr } from '@/lib/i18n'
 
 const LOCAL_IMAGES = [
-  { url: '/images/6O1A5855.jpg', alt: 'Lounge χώρος', cls: 'g1' },
-  { url: '/images/6O1A5871.jpg', alt: 'Θέα θάλασσα', cls: 'g2' },
-  { url: '/images/6O1A5867.jpg', alt: 'Φυσικό ξύλο', cls: 'g3' },
-  { url: '/images/6O1A5848.jpg', alt: 'Rattan καθίσματα', cls: 'g4' },
-  { url: '/images/6O1A5874.jpg', alt: 'Lounge sofa', cls: 'g5' },
+  { url: '/images/6O1A5855.webp', alt: 'Lounge χώρος', cls: 'g1' },
+  { url: '/images/6O1A5871.webp', alt: 'Θέα θάλασσα', cls: 'g2' },
+  { url: '/images/6O1A5867.webp', alt: 'Φυσικό ξύλο', cls: 'g3' },
+  { url: '/images/6O1A5848.webp', alt: 'Rattan καθίσματα', cls: 'g4' },
+  { url: '/images/6O1A5874.webp', alt: 'Lounge sofa', cls: 'g5' },
 ]
 
 export default function Gallery() {
@@ -50,7 +50,14 @@ export default function Gallery() {
       <div className="gallery-grid">
         {images.map((img, idx) => (
           <div className={`gitem ${img.cls}`} key={img.cls}>
-            <img src={img.url} alt={img.alt} />
+            <Image
+              className="gitem-img"
+              src={img.url}
+              alt={img.alt}
+              fill
+              sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+              unoptimized={img.url.startsWith('http')}
+            />
             <div className="gitem-overlay">
               <span className="gitem-num">0{idx + 1}</span>
               <span className="gitem-caption">{img.alt}</span>

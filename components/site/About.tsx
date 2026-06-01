@@ -1,6 +1,6 @@
 'use client'
-/* eslint-disable @next/next/no-img-element */
 import { useEffect, useRef } from 'react'
+import Image from 'next/image'
 import { useLang } from './LanguageContext'
 import { copy, tr } from '@/lib/i18n'
 
@@ -21,8 +21,26 @@ export default function About() {
     <div className="sec" id="about" ref={ref}>
       <div id="about-inner">
         <div className="about-images fade-up">
-          <img className="about-img-main" src="/images/6O1A5838.jpg" alt="Χώρος Theros" />
-          <img className="about-img-accent" src="/images/6O1A5849.jpg" alt="Lounge" />
+          {/* Wrapper divs required for Next.js Image fill */}
+          <div className="about-img-main">
+            <Image
+              src="/images/6O1A5838.webp"
+              alt="Χώρος Theros By The Sea"
+              fill
+              style={{ objectFit: 'cover' }}
+              sizes="(max-width: 768px) 70vw, 36vw"
+              priority
+            />
+          </div>
+          <div className="about-img-accent">
+            <Image
+              src="/images/6O1A5849.webp"
+              alt="Lounge χώρος"
+              fill
+              style={{ objectFit: 'cover' }}
+              sizes="(max-width: 768px) 50vw, 29vw"
+            />
+          </div>
         </div>
         <div className="about-text fade-up" style={{ transitionDelay: '.15s' }}>
           <h2 className="section-title">

@@ -78,13 +78,13 @@ export default function AdminDashboard() {
         </h2>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '.6rem' }}>
           <a href="/admin/gallery" style={{ fontSize: '.85rem', color: 'var(--terracotta)', textDecoration: 'none' }}>
-            🖼️ Διαχείριση Gallery →
+            Διαχείριση Gallery →
           </a>
           <a href="/admin/reviews" style={{ fontSize: '.85rem', color: 'var(--terracotta)', textDecoration: 'none' }}>
-            ⭐ Διαχείριση Reviews →
+            Διαχείριση Reviews →
           </a>
           <a href="/" target="_blank" style={{ fontSize: '.85rem', color: 'var(--text-light)', textDecoration: 'none' }}>
-            🌐 Προβολή site →
+            Προβολή site →
           </a>
         </div>
       </div>

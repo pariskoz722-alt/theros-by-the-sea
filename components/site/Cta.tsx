@@ -13,7 +13,7 @@ export default function Cta() {
       </h2>
       <div className="cta-buttons">
         <a href="tel:+302291036400" className="btn-primary">
-          📞 2291 036 400
+          2291 036 400
         </a>
         <a
           href="https://www.instagram.com/theros_by_the_sea/"

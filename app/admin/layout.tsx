@@ -5,9 +5,9 @@ import { usePathname, useRouter } from 'next/navigation'
 import { createClient } from '@/lib/supabase/client'
 
 const NAV_ITEMS = [
-  { href: '/admin', label: 'Dashboard', icon: '📊' },
-  { href: '/admin/gallery', label: 'Gallery', icon: '🖼️' },
-  { href: '/admin/reviews', label: 'Reviews', icon: '⭐' },
+  { href: '/admin', label: 'Dashboard', icon: '—' },
+  { href: '/admin/gallery', label: 'Gallery', icon: '—' },
+  { href: '/admin/reviews', label: 'Reviews', icon: '—' },
 ]
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {

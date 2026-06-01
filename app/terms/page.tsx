@@ -91,8 +91,8 @@ export default function TermsPage() {
             <div style={{ background: 'var(--sand)', padding: '1.25rem 1.5rem', borderLeft: '3px solid var(--terracotta)' }}>
               <strong>Theros By The Sea</strong><br />
               Λεωφ. Αθηνών Σουνίου 21, Ανάβυσσος 190 13<br />
-              📧 info@therosbythesea.gr<br />
-              📞 2291 036 400
+              info@therosbythesea.gr<br />
+              2291 036 400
             </div>
           </Section>
 

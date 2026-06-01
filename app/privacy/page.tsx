@@ -38,8 +38,8 @@ export default function PrivacyPage() {
               σύμφωνα με τον Γενικό Κανονισμό Προστασίας Δεδομένων (ΓΚΠΔ / GDPR - ΕΕ 2016/679).
             </p>
             <p style={{ marginTop: '1rem' }}>
-              📧 Επικοινωνία: <a href="mailto:info@therosbythesea.gr" style={{ color: 'var(--terracotta)' }}>info@therosbythesea.gr</a><br />
-              📞 Τηλέφωνο: <a href="tel:+302291036400" style={{ color: 'var(--terracotta)' }}>2291 036 400</a>
+              Email: <a href="mailto:info@therosbythesea.gr" style={{ color: 'var(--terracotta)' }}>info@therosbythesea.gr</a><br />
+              Tel: <a href="tel:+302291036400" style={{ color: 'var(--terracotta)' }}>2291 036 400</a>
             </p>
           </Section>
 
@@ -97,12 +97,12 @@ export default function PrivacyPage() {
             <p>Έχετε τα παρακάτω δικαιώματα σχετικά με τα προσωπικά σας δεδομένα:</p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: '.75rem', marginTop: '1rem' }}>
               {[
-                ['📋 Πρόσβαση', 'Να μάθετε ποια δεδομένα σας έχουμε'],
-                ['✏️ Διόρθωση', 'Να διορθώσετε ανακριβή δεδομένα'],
-                ['🗑️ Διαγραφή', 'Να ζητήσετε διαγραφή («δικαίωμα λήθης»)'],
-                ['⏸️ Περιορισμός', 'Να περιορίσετε την επεξεργασία'],
-                ['📤 Φορητότητα', 'Να λάβετε τα δεδομένα σε αναγνώσιμη μορφή'],
-                ['❌ Εναντίωση', 'Να αντιταχθείτε στην επεξεργασία'],
+                ['Πρόσβαση', 'Να μάθετε ποια δεδομένα σας έχουμε'],
+                ['Διόρθωση', 'Να διορθώσετε ανακριβή δεδομένα'],
+                ['Διαγραφή', 'Να ζητήσετε διαγραφή («δικαίωμα λήθης»)'],
+                ['Περιορισμός', 'Να περιορίσετε την επεξεργασία'],
+                ['Φορητότητα', 'Να λάβετε τα δεδομένα σε αναγνώσιμη μορφή'],
+                ['Εναντίωση', 'Να αντιταχθείτε στην επεξεργασία'],
               ].map(([right, desc]) => (
                 <div key={right} style={{ background: 'white', padding: '.75rem 1rem', border: '1px solid var(--sand-dark)' }}>
                   <div style={{ fontWeight: 500, marginBottom: '.25rem', fontSize: '.85rem' }}>{right}</div>
@@ -138,8 +138,8 @@ export default function PrivacyPage() {
             <div style={{ background: 'var(--sand)', padding: '1.25rem 1.5rem', marginTop: '1rem', borderLeft: '3px solid var(--terracotta)' }}>
               <strong>Theros By The Sea</strong><br />
               Λεωφ. Αθηνών Σουνίου 21, Ανάβυσσος 190 13<br />
-              📧 info@therosbythesea.gr<br />
-              📞 2291 036 400
+              info@therosbythesea.gr<br />
+              2291 036 400
             </div>
           </Section>
 

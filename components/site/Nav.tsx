@@ -31,7 +31,7 @@ export default function Nav() {
         <a href="#reviews" onClick={closeMenu}>Reviews</a>
         <a href="#gallery" onClick={closeMenu}>Gallery</a>
         <a href="#info" onClick={closeMenu}>Visit</a>
-        <a href="tel:+302291036400" onClick={closeMenu}>📞 2291 036 400</a>
+        <a href="tel:+302291036400" onClick={closeMenu}>2291 036 400</a>
         <div style={{ marginTop: '.5rem' }}><LangToggle dark /></div>
       </div>
 
@@ -49,7 +49,7 @@ export default function Nav() {
           </li>
           <li>
             <a href="tel:+302291036400" style={{ color: 'var(--terracotta)', fontWeight: 500 }}>
-              📞 2291 036 400
+              2291 036 400
             </a>
           </li>
           <li><LangToggle /></li>

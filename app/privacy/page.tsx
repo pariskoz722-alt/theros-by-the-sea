@@ -26,7 +26,7 @@ export default function PrivacyPage() {
           Πολιτική Απορρήτου
         </h1>
         <p style={{ fontSize: '.8rem', color: 'var(--text-light)', marginBottom: '3rem' }}>
-          Τελευταία ενημέρωση: Μάιος 2025
+          Τελευταία ενημέρωση: Ιούνιος 2025
         </p>
 
         <div style={{ fontSize: '.92rem', lineHeight: 1.85, color: 'var(--text-mid)' }}>
@@ -43,70 +43,57 @@ export default function PrivacyPage() {
             </p>
           </Section>
 
-          <Section title="2. Ποια Δεδομένα Συλλέγουμε">
-            <p>Κατά τη διαδικασία online κράτησης συλλέγουμε:</p>
-            <ul style={{ marginTop: '.75rem', paddingLeft: '1.5rem', display: 'flex', flexDirection: 'column', gap: '.4rem' }}>
-              <li><strong>Ονοματεπώνυμο</strong> — για την αναγνώριση της κράτησης</li>
-              <li><strong>Αριθμός τηλεφώνου</strong> — για επιβεβαίωση και επικοινωνία</li>
-              <li><strong>Διεύθυνση email</strong> — προαιρετικά, για αποστολή επιβεβαίωσης</li>
-              <li><strong>Ημερομηνία, ώρα και αριθμός ατόμων</strong> — για τη διαχείριση της κράτησης</li>
-              <li><strong>Σημειώσεις</strong> — προαιρετικά, για ειδικές απαιτήσεις (π.χ. αλλεργίες)</li>
-            </ul>
+          <Section title="2. Δεδομένα που Συλλέγουμε">
+            <p>
+              Ο παρών ιστότοπος <strong>δεν συλλέγει προσωπικά δεδομένα μέσω φορμών</strong>.
+              Δεν υπάρχουν φόρμες εγγραφής, online κράτησης ή newsletter.
+            </p>
             <p style={{ marginTop: '1rem' }}>
-              <strong>Δεν συλλέγουμε</strong> οικονομικά στοιχεία, αριθμούς καρτών, ή ευαίσθητα προσωπικά δεδομένα.
+              Οι κρατήσεις πραγματοποιούνται αποκλειστικά <strong>τηλεφωνικά</strong> στο 2291 036 400.
+              Τα στοιχεία που παρέχετε κατά την τηλεφωνική επικοινωνία (όνομα, αριθμός τηλεφώνου,
+              ημερομηνία) χρησιμοποιούνται αποκλειστικά για τη διαχείριση της κράτησής σας και
+              δεν αποθηκεύονται σε ψηφιακό σύστημα.
+            </p>
+            <p style={{ marginTop: '1rem' }}>
+              <strong>Δεν συλλέγουμε</strong> οικονομικά στοιχεία, αριθμούς καρτών ή ευαίσθητα
+              προσωπικά δεδομένα.
             </p>
           </Section>
 
-          <Section title="3. Σκοπός και Νομική Βάση Επεξεργασίας">
-            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '.85rem', marginTop: '.5rem' }}>
-              <thead>
-                <tr style={{ background: 'var(--sand)', textAlign: 'left' }}>
-                  <th style={{ padding: '.6rem 1rem', fontWeight: 500 }}>Σκοπός</th>
-                  <th style={{ padding: '.6rem 1rem', fontWeight: 500 }}>Νομική Βάση</th>
-                </tr>
-              </thead>
-              <tbody>
-                {[
-                  ['Διαχείριση και επιβεβαίωση κράτησης', 'Εκτέλεση σύμβασης (άρθρο 6§1β ΓΚΠΔ)'],
-                  ['Επικοινωνία για την κράτησή σας', 'Εκτέλεση σύμβασης'],
-                  ['Βελτίωση υπηρεσιών', 'Έννομο συμφέρον (άρθρο 6§1στ ΓΚΠΔ)'],
-                  ['Συμμόρφωση με φορολογικές υποχρεώσεις', 'Νομική υποχρέωση (άρθρο 6§1γ ΓΚΠΔ)'],
-                ].map(([scope, basis], i) => (
-                  <tr key={i} style={{ borderBottom: '1px solid var(--sand-dark)' }}>
-                    <td style={{ padding: '.6rem 1rem' }}>{scope}</td>
-                    <td style={{ padding: '.6rem 1rem', color: 'var(--text-light)', fontSize: '.82rem' }}>{basis}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </Section>
-
-          <Section title="4. Χρόνος Διατήρησης Δεδομένων">
+          <Section title="3. Cookies">
             <p>
-              Τα δεδομένα κρατήσεων διατηρούνται για <strong>2 χρόνια</strong> από την ημερομηνία
-              της κράτησης για λόγους εξυπηρέτησης και φορολογικής συμμόρφωσης.
-              Μετά τη λήξη αυτής της περιόδου διαγράφονται αυτόματα.
+              Αυτός ο ιστότοπος χρησιμοποιεί <strong>αποκλειστικά απαραίτητα cookies</strong> για
+              τη λειτουργία του admin panel (σύνδεση διαχειριστή). <strong>Δεν χρησιμοποιούμε</strong>{' '}
+              cookies παρακολούθησης, analytics ή διαφημιστικά cookies.
+            </p>
+            <p style={{ marginTop: '.75rem' }}>
+              Τα απαραίτητα cookies δεν απαιτούν τη συγκατάθεσή σας σύμφωνα με την Οδηγία
+              ePrivacy και τον ΓΚΠΔ.
             </p>
           </Section>
 
-          <Section title="5. Κοινοποίηση Δεδομένων σε Τρίτους">
+          <Section title="4. Τρίτοι Πάροχοι">
             <p>
-              Τα δεδομένα σας <strong>δεν πωλούνται</strong> και <strong>δεν κοινοποιούνται</strong> σε τρίτα
-              μέρη για εμπορικούς σκοπούς. Χρησιμοποιούμε τους παρακάτω αξιόπιστους παρόχους:
+              Ο ιστότοπος χρησιμοποιεί τους παρακάτω αξιόπιστους παρόχους για τη λειτουργία του:
             </p>
             <ul style={{ marginTop: '.75rem', paddingLeft: '1.5rem', display: 'flex', flexDirection: 'column', gap: '.4rem' }}>
               <li>
-                <strong>Supabase Inc.</strong> (υποδομή βάσης δεδομένων) — servers εντός ΕΕ,
-                συμβατοί με GDPR. <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--terracotta)' }}>Privacy Policy</a>
+                <strong>Vercel Inc.</strong> (φιλοξενία ιστοσελίδας) — συμβατοί με GDPR.{' '}
+                <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--terracotta)' }}>Privacy Policy</a>
               </li>
               <li>
-                <strong>Vercel Inc.</strong> (φιλοξενία ιστοσελίδας) — συμβατοί με GDPR.
-                <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--terracotta)', marginLeft: '.4rem' }}>Privacy Policy</a>
+                <strong>Supabase Inc.</strong> (υποδομή admin panel) — servers εντός ΕΕ, συμβατοί με GDPR.{' '}
+                <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--terracotta)' }}>Privacy Policy</a>
+              </li>
+              <li>
+                <strong>Google Maps</strong> (χάρτης τοποθεσίας) — ενδέχεται να συλλέγει δεδομένα χρήσης
+                σύμφωνα με την{' '}
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--terracotta)' }}>Πολιτική Απορρήτου της Google</a>.
               </li>
             </ul>
           </Section>
 
-          <Section title="6. Τα Δικαιώματά Σας (GDPR)">
+          <Section title="5. Τα Δικαιώματά Σας (GDPR)">
             <p>Έχετε τα παρακάτω δικαιώματα σχετικά με τα προσωπικά σας δεδομένα:</p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '.75rem', marginTop: '1rem' }}>
               {[
@@ -136,27 +123,15 @@ export default function PrivacyPage() {
             </p>
           </Section>
 
-          <Section title="7. Cookies">
+          <Section title="6. Ασφάλεια Δεδομένων">
             <p>
-              Αυτός ο ιστότοπος χρησιμοποιεί <strong>αποκλειστικά απαραίτητα cookies</strong> για
-              τη λειτουργία του admin panel (σύνδεση διαχειριστή). <strong>Δεν χρησιμοποιούμε</strong>{' '}
-              cookies παρακολούθησης, analytics ή διαφημιστικά cookies.
-            </p>
-            <p style={{ marginTop: '.75rem' }}>
-              Τα απαραίτητα cookies δεν απαιτούν τη συγκατάθεσή σας σύμφωνα με την Οδηγία
-              ePrivacy και τον ΓΚΠΔ.
+              Εφαρμόζουμε κατάλληλα τεχνικά και οργανωτικά μέτρα για την προστασία των δεδομένων:
+              κρυπτογράφηση HTTPS, Row Level Security (RLS) στη βάση δεδομένων του admin panel,
+              πρόσβαση μόνο από εξουσιοδοτημένα άτομα.
             </p>
           </Section>
 
-          <Section title="8. Ασφάλεια Δεδομένων">
-            <p>
-              Εφαρμόζουμε κατάλληλα τεχνικά και οργανωτικά μέτρα για την προστασία των δεδομένων σας:
-              κρυπτογράφηση HTTPS, Row Level Security (RLS) στη βάση δεδομένων, πρόσβαση μόνο από
-              εξουσιοδοτημένα άτομα.
-            </p>
-          </Section>
-
-          <Section title="9. Επικοινωνία">
+          <Section title="7. Επικοινωνία">
             <p>
               Για οποιοδήποτε ερώτημα σχετικά με την επεξεργασία των προσωπικών σας δεδομένων:
             </p>

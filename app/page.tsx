@@ -1,5 +1,4 @@
 import { LanguageProvider } from '@/components/site/LanguageContext'
-import Cursor from '@/components/site/Cursor'
 import Nav from '@/components/site/Nav'
 import Hero from '@/components/site/Hero'
 import About from '@/components/site/About'
@@ -12,7 +11,6 @@ import Footer from '@/components/site/Footer'
 export default function Home() {
   return (
     <LanguageProvider>
-      <Cursor />
       <Nav />
       <Hero />
       <About />

@@ -27,32 +27,6 @@ body {
   word-break: break-word;
 }
 
-/* ── CUSTOM CURSOR (μόνο στο site, όχι στο admin) ── */
-@media (pointer: fine) {
-  body.custom-cursor { cursor: none; }
-  body.custom-cursor a, body.custom-cursor button { cursor: none; }
-  #cursor, #cursor-ring { display: block; }
-}
-@media (pointer: coarse) {
-  #cursor, #cursor-ring { display: none; }
-}
-#cursor {
-  position: fixed; width: 10px; height: 10px;
-  background: var(--terracotta); border-radius: 50%;
-  pointer-events: none; z-index: 9999;
-  transform: translate(-50%,-50%);
-  transition: width .3s, height .3s, background .3s;
-}
-#cursor-ring {
-  position: fixed; width: 36px; height: 36px;
-  border: 1.5px solid rgba(196,113,74,0.6); border-radius: 50%;
-  pointer-events: none; z-index: 9998;
-  transform: translate(-50%,-50%);
-  transition: width .4s, height .4s, border-color .4s;
-}
-body.cursor-hover #cursor { width: 16px; height: 16px; background: var(--terracotta-dark); }
-body.cursor-hover #cursor-ring { width: 52px; height: 52px; border-color: rgba(196,113,74,1); }
-
 /* ── NAV ── */
 nav.site-nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 200;

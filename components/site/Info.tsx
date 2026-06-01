@@ -40,7 +40,7 @@ export default function Info() {
           <div className="info-icon">📞</div>
           <h3>{tr(copy.info.phone, lang)}</h3>
           <a href="tel:+302291036400">2291 036 400</a>
-          <p style={{ marginTop: '.8rem', fontSize: '.8rem' }}>Delivery · Takeaway · Dine-in</p>
+          <p style={{ marginTop: '.8rem', fontSize: '.8rem' }}>Takeaway · Dine-in</p>
         </div>
       </div>
 

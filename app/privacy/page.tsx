@@ -9,16 +9,16 @@ export const metadata: Metadata = {
 export default function PrivacyPage() {
   return (
     <div style={{ minHeight: '100vh', background: 'var(--ivory)', paddingTop: '80px' }}>
-      <nav className="site-nav scrolled">
+      <nav className="site-nav scrolled" style={{ padding: 'clamp(.85rem,3vw,1.25rem) clamp(1rem,4vw,3rem)' }}>
         <Link href="/" className="nav-logo" style={{ color: 'var(--text-dark)', animation: 'none' }}>
           Theros By The Sea
         </Link>
-        <Link href="/" style={{ fontSize: '.7rem', letterSpacing: '.2em', textTransform: 'uppercase', color: 'var(--text-mid)', textDecoration: 'none' }}>
+        <Link href="/" style={{ fontSize: '.7rem', letterSpacing: '.2em', textTransform: 'uppercase', color: 'var(--text-mid)', textDecoration: 'none', flexShrink: 0 }}>
           ← Αρχική
         </Link>
       </nav>
 
-      <div style={{ maxWidth: 760, margin: '0 auto', padding: '3rem 1.5rem 5rem' }}>
+      <div style={{ maxWidth: 760, margin: '0 auto', padding: 'clamp(2rem,5vw,3rem) clamp(1rem,4vw,1.5rem) 5rem' }}>
         <p style={{ fontSize: '.65rem', letterSpacing: '.3em', textTransform: 'uppercase', color: 'var(--terracotta)', marginBottom: '.8rem' }}>
           Νομικές Πληροφορίες
         </p>
@@ -95,7 +95,7 @@ export default function PrivacyPage() {
 
           <Section title="5. Τα Δικαιώματά Σας (GDPR)">
             <p>Έχετε τα παρακάτω δικαιώματα σχετικά με τα προσωπικά σας δεδομένα:</p>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '.75rem', marginTop: '1rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: '.75rem', marginTop: '1rem' }}>
               {[
                 ['📋 Πρόσβαση', 'Να μάθετε ποια δεδομένα σας έχουμε'],
                 ['✏️ Διόρθωση', 'Να διορθώσετε ανακριβή δεδομένα'],

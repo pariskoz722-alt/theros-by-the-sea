@@ -1,6 +1,5 @@
 'use client'
 import { useEffect, useState } from 'react'
-import Link from 'next/link'
 import { useLang } from './LanguageContext'
 import { copy, tr } from '@/lib/i18n'
 
@@ -32,8 +31,7 @@ export default function Nav() {
         <a href="#reviews" onClick={closeMenu}>Reviews</a>
         <a href="#gallery" onClick={closeMenu}>Gallery</a>
         <a href="#info" onClick={closeMenu}>Visit</a>
-        <Link href="/booking" onClick={closeMenu}>{tr(copy.nav.booking, lang)}</Link>
-        <Link href="/booking/status" onClick={closeMenu} style={{ fontSize: '1.2rem' }}>{tr(copy.nav.myBookings, lang)}</Link>
+        <a href="tel:+302291036400" onClick={closeMenu}>📞 2291 036 400</a>
         <div style={{ marginTop: '.5rem' }}><LangToggle dark /></div>
       </div>
 
@@ -50,9 +48,9 @@ export default function Nav() {
             </a>
           </li>
           <li>
-            <Link href="/booking" style={{ color: 'var(--terracotta)', fontWeight: 500 }}>
-              {tr(copy.nav.booking, lang)}
-            </Link>
+            <a href="tel:+302291036400" style={{ color: 'var(--terracotta)', fontWeight: 500 }}>
+              📞 2291 036 400
+            </a>
           </li>
           <li><LangToggle /></li>
         </ul>

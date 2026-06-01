@@ -1,4 +1,14 @@
-export type ReservationStatus = 'pending' | 'confirmed' | 'cancelled'
+export type ReservationStatus = 'pending' | 'confirmed' | 'cancelled' | 'rejected'
+export type Area = 'indoor' | 'outdoor' | 'bar' | 'any'
+
+export interface Table {
+  id: string
+  name: string
+  area: 'indoor' | 'outdoor' | 'bar'
+  capacity: number
+  is_active: boolean
+  created_at: string
+}
 
 export interface Reservation {
   id: string
@@ -8,6 +18,9 @@ export interface Reservation {
   date: string
   time_slot: string
   guests: number
+  area: Area
+  table_id?: string
+  action_token?: string
   notes?: string
   status: ReservationStatus
   created_at: string
@@ -35,10 +48,8 @@ export interface Review {
   created_at: string
 }
 
-export interface TimeSlotAvailability {
+export interface SlotAvailability {
   time_slot: string
-  booked_guests: number
-  capacity: number
-  available_guests: number
-  is_full: boolean
+  available_tables: number
+  is_available: boolean
 }

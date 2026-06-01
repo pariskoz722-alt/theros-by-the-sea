@@ -1,6 +1,5 @@
 'use client'
 import { useEffect, useRef } from 'react'
-import Link from 'next/link'
 import { useLang } from './LanguageContext'
 import { copy, tr } from '@/lib/i18n'
 
@@ -49,7 +48,7 @@ export default function Hero() {
         <div className="reveal-line"><span>
           <div className="hero-divider" />
           <div className="hero-ctas">
-            <Link href="/booking" className="btn-primary">{tr(copy.hero.cta1, lang)}</Link>
+            <a href="tel:+302291036400" className="btn-primary">{tr(copy.hero.cta1, lang)}</a>
             <a href="#gallery" className="btn-outline">{tr(copy.hero.cta2, lang)}</a>
           </div>
         </span></div>

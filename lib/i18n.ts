@@ -5,14 +5,11 @@ const b = (el: string, en: string): B => ({ el, en })
 export const tr = (obj: B, lang: Lang) => obj[lang]
 
 export const copy = {
-  nav: {
-    booking:    b('Κράτηση', 'Book Now'),
-    myBookings: b('Οι κρατήσεις μου', 'My Bookings'),
-  },
+  nav: {},
   hero: {
     eyebrow: b('Ανάβυσσος · Αττική', 'Anavissos · Attica'),
     sub:     b('Γεύσεις, ατμόσφαιρα και ήλιος δίπλα στη θάλασσα', 'Flavours, atmosphere and sunshine by the sea'),
-    cta1:    b('Κράτηση', 'Book Now'),
+    cta1:    b('Τηλεφωνήστε μας', 'Call Us'),
     cta2:    b('Δείτε μας', 'Explore'),
   },
   about: {
@@ -54,10 +51,9 @@ export const copy = {
     phone:   b('Τηλέφωνο', 'Phone'),
   },
   cta: {
-    label:   b('Κάντε κράτηση', 'Reserve a table'),
+    label:   b('Επικοινωνήστε μαζί μας', 'Get in touch'),
     title1:  b('Σας περιμένουμε', 'We look forward'),
     titleEm: b('δίπλα στη θάλασσα', 'to seeing you by the sea'),
-    btn:     b('Κράτηση Online', 'Book Online'),
   },
   footer: {
     privacy: b('Πολιτική Απορρήτου', 'Privacy Policy'),

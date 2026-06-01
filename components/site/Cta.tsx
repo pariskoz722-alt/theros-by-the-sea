@@ -1,5 +1,4 @@
 'use client'
-import Link from 'next/link'
 import { useLang } from './LanguageContext'
 import { copy, tr } from '@/lib/i18n'
 
@@ -13,8 +12,7 @@ export default function Cta() {
         {tr(copy.cta.title1, lang)}<br /><em>{tr(copy.cta.titleEm, lang)}</em>
       </h2>
       <div className="cta-buttons">
-        <Link href="/booking" className="btn-primary">{tr(copy.cta.btn, lang)}</Link>
-        <a href="tel:+302291036400" className="btn-primary" style={{ background: 'transparent', border: '1px solid rgba(242,235,217,.4)' }}>
+        <a href="tel:+302291036400" className="btn-primary">
           📞 2291 036 400
         </a>
         <a

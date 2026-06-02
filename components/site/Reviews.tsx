@@ -37,6 +37,16 @@ export default function Reviews() {
   const [dbReviews, setDbReviews] = useState<Review[]>([])
 
   useEffect(() => {
+    // Fade-in animation for the reviews header
+    const obs = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible') }),
+      { threshold: .15 }
+    )
+    document.querySelectorAll('#reviews .anim-fade').forEach(el => obs.observe(el))
+    return () => obs.disconnect()
+  }, [])
+
+  useEffect(() => {
     const supabase = createClient()
     supabase
       .from('reviews')
@@ -54,7 +64,7 @@ export default function Reviews() {
 
   return (
     <div id="reviews">
-      <div className="reviews-header fade-up">
+      <div className="reviews-header anim-fade">
         <p className="section-label">{tr(copy.reviews.label, lang)}</p>
         <h2 className="section-title">
           {tr(copy.reviews.title1, lang)}<em>{tr(copy.reviews.titleEm, lang)}</em>{tr(copy.reviews.title2, lang)}

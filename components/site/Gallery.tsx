@@ -19,6 +19,16 @@ export default function Gallery() {
   const { lang } = useLang()
 
   useEffect(() => {
+    // Stagger animation — each gitem animates separately as it enters view
+    const obs = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible') }),
+      { threshold: .06 }
+    )
+    document.querySelectorAll('.gallery-grid .anim-stagger').forEach(el => obs.observe(el))
+    return () => obs.disconnect()
+  }, [images])
+
+  useEffect(() => {
     const supabase = createClient()
     supabase
       .from('gallery_images')
@@ -49,7 +59,8 @@ export default function Gallery() {
       </div>
       <div className="gallery-grid">
         {images.map((img, idx) => (
-          <div className={`gitem ${img.cls}`} key={img.cls}>
+          /* anim-stagger: each image staggers in with non-uniform delays (set in CSS) */
+          <div className={`gitem ${img.cls} anim-stagger`} key={img.cls}>
             <Image
               className="gitem-img"
               src={img.url}

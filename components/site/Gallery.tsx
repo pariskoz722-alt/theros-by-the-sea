@@ -7,10 +7,10 @@ import { useLang } from './LanguageContext'
 import { copy, tr } from '@/lib/i18n'
 
 const LOCAL_IMAGES = [
-  { url: '/images/6O1A5855.webp', alt: 'Lounge χώρος', cls: 'g1' },
-  { url: '/images/6O1A5871.webp', alt: 'Θέα θάλασσα', cls: 'g2' },
-  { url: '/images/6O1A5867.webp', alt: 'Φυσικό ξύλο', cls: 'g3' },
-  { url: '/images/6O1A5848.webp', alt: 'Rattan καθίσματα', cls: 'g4' },
+  { url: '/images/6O1A5835.webp', alt: 'Lounge χώρος', cls: 'g1' },
+  { url: '/images/6O1A5861.webp', alt: 'Θέα θάλασσα', cls: 'g2' },
+  { url: '/images/6O1A5866.webp', alt: 'Ατμόσφαιρα', cls: 'g3' },
+  { url: '/images/6O1A5871.webp', alt: 'Παραθαλάσσιος χώρος', cls: 'g4' },
   { url: '/images/6O1A5874.webp', alt: 'Lounge sofa', cls: 'g5' },
 ]
 

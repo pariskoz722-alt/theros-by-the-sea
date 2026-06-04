@@ -145,8 +145,9 @@ nav.site-nav.scrolled .nav-hamburger span { background: var(--text-dark); }
 .reveal-line:nth-child(5) span{transition-delay:.7s}
 
 .hero-eyebrow {
-  font-size: .68rem; letter-spacing: .35em; text-transform: uppercase;
-  color: var(--terracotta); margin-bottom: 1rem; display: block;
+  font-size: .82rem; letter-spacing: .38em; text-transform: uppercase;
+  color: var(--terracotta); margin-bottom: 1.2rem; display: block;
+  text-shadow: 0 0 20px rgba(0,0,0,.4);
 }
 .hero-title {
   font-family: 'Cormorant Garamond', serif;

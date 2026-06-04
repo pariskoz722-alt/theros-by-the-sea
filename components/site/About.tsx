@@ -57,7 +57,7 @@ export default function About() {
           <div className="about-stats">
             <div><div className="stat-num">4.3</div><div className="stat-label">{tr(copy.about.stat1, lang)}</div></div>
             <div><div className="stat-num">184</div><div className="stat-label">{tr(copy.about.stat2, lang)}</div></div>
-            <div><div className="stat-num">€10–35</div><div className="stat-label">{tr(copy.about.stat3, lang)}</div></div>
+            <div><div className="stat-num">€5–25</div><div className="stat-label">{tr(copy.about.stat3, lang)}</div></div>
           </div>
           <a href="tel:+302291036400" className="btn-primary">{tr(copy.about.cta, lang)}</a>
         </div>

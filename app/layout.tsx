@@ -1,65 +1,27 @@
 import type { Metadata } from 'next'
 import './globals.css'
 
-const SITE_URL = 'https://theros-sea.vercel.app'
-const OG_IMAGE = `${SITE_URL}/images/6O1A5835.webp`
-
 export const metadata: Metadata = {
-  // metadataBase resolves relative image paths to the full domain
-  metadataBase: new URL(SITE_URL),
-
   title: 'Theros By The Sea | Εστιατόριο Ανάβυσσος',
-  description: 'Γεύσεις, ατμόσφαιρα και ήλιος δίπλα στη θάλασσα. Ανάβυσσος, Αττική.',
-  keywords: [
-    'restaurant', 'Anavissos', 'Αττική', 'θάλασσα',
-    'εστιατόριο', 'Ανάβυσσος', 'Theros By The Sea',
-    'beach restaurant', 'Αττική εστιατόριο',
-  ],
-
-  // Canonical URL — tells Google this is the authoritative URL
-  alternates: {
-    canonical: SITE_URL,
-  },
-
-  // Open Graph — WhatsApp, Facebook, Instagram, LinkedIn previews
+  description: 'Γεύσεις, ατμόσφαιρα και ήλιος δίπλα στη θάλασσα. Ανάβυσσος, Αττική. Δευτέρα–Κυριακή 08:00–00:00.',
   openGraph: {
     title: 'Theros By The Sea',
-    description: 'Γεύσεις, ατμόσφαιρα και ήλιος δίπλα στη θάλασσα.',
-    url: SITE_URL,
+    description: 'Γεύσεις, ατμόσφαιρα και ήλιος δίπλα στη θάλασσα. Ανάβυσσος, Αττική.',
+    url: 'https://theros-sea.vercel.app',
     siteName: 'Theros By The Sea',
-    type: 'website', // 'restaurant' is not a valid OG type — website is correct
-    locale: 'el_GR',
-    images: [
-      {
-        url: OG_IMAGE,
-        width: 1200,
-        height: 630,
-        alt: 'Theros By The Sea — Εστιατόριο στην Ανάβυσσο',
-        type: 'image/webp',
-      },
-    ],
+    images: [{
+      url: 'https://theros-sea.vercel.app/images/6O1A5835.webp',
+      width: 1200,
+      height: 630,
+      alt: 'Theros By The Sea - Ανάβυσσος',
+    }],
+    type: 'website',
   },
-
-  // Twitter / X card
   twitter: {
     card: 'summary_large_image',
     title: 'Theros By The Sea',
     description: 'Γεύσεις, ατμόσφαιρα και ήλιος δίπλα στη θάλασσα.',
-    images: [OG_IMAGE],
-  },
-
-  // Favicon — uses one of our restaurant photos
-  icons: {
-    icon: '/images/6O1A5835.webp',
-    apple: '/images/6O1A5835.webp',
-    shortcut: '/images/6O1A5835.webp',
-  },
-
-  // Robots
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: { index: true, follow: true },
+    images: ['https://theros-sea.vercel.app/images/6O1A5835.webp'],
   },
 }
 

@@ -23,6 +23,9 @@ export const metadata: Metadata = {
     description: 'Γεύσεις, ατμόσφαιρα και ήλιος δίπλα στη θάλασσα.',
     images: ['https://theros-sea.vercel.app/images/6O1A5835.webp'],
   },
+  verification: {
+    google: 'WuFDBKiqDOwtw_6G4cPGiSJ5VGqXEG8G4jbFAHAaGRc',
+  },
 }
 
 export const viewport = {

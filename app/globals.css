@@ -303,6 +303,37 @@ nav.site-nav.scrolled .nav-hamburger span { background: var(--text-dark); }
 .map-directions-btn { display:inline-flex; align-items:center; gap:.5rem; position:absolute; bottom:1.25rem; right:1.25rem; background:white; color:var(--text-dark); font-family:'Jost',sans-serif; font-size:.72rem; font-weight:500; letter-spacing:.12em; text-transform:uppercase; text-decoration:none; padding:.65rem 1.2rem; box-shadow:0 2px 12px rgba(0,0,0,.15); transition:background .2s, color .2s; }
 .map-directions-btn:hover { background:var(--terracotta); color:white; }
 
+/* Map lazy-load placeholder */
+.map-placeholder {
+  height: 380px;
+  background: var(--sand);
+  border: 1px solid var(--sand-dark);
+  display: flex; align-items: center; justify-content: center;
+}
+.map-placeholder-inner {
+  text-align: center; padding: 2rem;
+}
+.map-placeholder-address {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem; font-weight: 300; line-height: 1.7;
+  color: var(--text-mid); margin-bottom: .75rem;
+}
+.map-placeholder-notice {
+  font-size: .72rem; color: var(--text-light);
+  letter-spacing: .04em; margin-bottom: 1.25rem; line-height: 1.6;
+}
+.map-load-btn {
+  background: none;
+  border: 1px solid var(--terracotta);
+  color: var(--terracotta);
+  font-family: 'Jost', sans-serif;
+  font-size: .68rem; font-weight: 500;
+  letter-spacing: .2em; text-transform: uppercase;
+  padding: .65rem 1.5rem; cursor: pointer;
+  transition: background .2s, color .2s;
+}
+.map-load-btn:hover { background: var(--terracotta); color: var(--ivory); }
+
 /* ── CTA ── */
 #cta{background:var(--text-dark);text-align:center;padding:clamp(6rem,12vw,10rem) clamp(1.5rem,5vw,3rem);position:relative;overflow:hidden}
 #cta::before{content:'';position:absolute;inset:0;background:url('/images/6O1A5854.webp') center/cover;opacity:.12}

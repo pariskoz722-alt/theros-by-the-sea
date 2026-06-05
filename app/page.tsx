@@ -3,7 +3,6 @@ import { LanguageProvider } from '@/components/site/LanguageContext'
 import Nav from '@/components/site/Nav'
 import Hero from '@/components/site/Hero'
 import About from '@/components/site/About'
-import Quote from '@/components/site/Quote'
 import Gallery from '@/components/site/Gallery'
 import Info from '@/components/site/Info'
 import Cta from '@/components/site/Cta'
@@ -21,7 +20,6 @@ export default function Home() {
       <Nav />
       <Hero />
       <About />
-      <Quote />
       <Reviews />
       <Gallery />
       <Info />

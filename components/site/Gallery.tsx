@@ -7,11 +7,11 @@ import { useLang } from './LanguageContext'
 import { copy, tr } from '@/lib/i18n'
 
 const LOCAL_IMAGES = [
-  { url: '/images/6O1A5835.webp', alt: 'Lounge χώρος', cls: 'g1' },
-  { url: '/images/6O1A5861.webp', alt: 'Θέα θάλασσα', cls: 'g2' },
-  { url: '/images/6O1A5866.webp', alt: 'Ατμόσφαιρα', cls: 'g3' },
-  { url: '/images/6O1A5871.webp', alt: 'Παραθαλάσσιος χώρος', cls: 'g4' },
-  { url: '/images/6O1A5874.webp', alt: 'Lounge sofa', cls: 'g5' },
+  { url: '/images/6O1A5835.webp', alt: 'Beach restaurant στην Ανάβυσσο — εξωτερικός χώρος Theros By The Sea', cls: 'g1' },
+  { url: '/images/6O1A5861.webp', alt: 'Θέα θάλασσα από το εστιατόριο Theros By The Sea στην Ανάβυσσο', cls: 'g2' },
+  { url: '/images/6O1A5866.webp', alt: 'Παραθαλάσσια ατμόσφαιρα — Theros By The Sea, Αττική', cls: 'g3' },
+  { url: '/images/6O1A5871.webp', alt: 'Παραθαλάσσιος lounge χώρος εστιατορίου Ανάβυσσος', cls: 'g4' },
+  { url: '/images/6O1A5874.webp', alt: 'Lounge sofa beach restaurant Athens Riviera — Theros By The Sea', cls: 'g5' },
 ]
 
 export default function Gallery() {

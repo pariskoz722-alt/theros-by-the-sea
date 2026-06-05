@@ -25,7 +25,7 @@ export default function About() {
           <div className="about-img-main">
             <Image
               src="/images/6O1A5838.webp"
-              alt="Χώρος Theros By The Sea"
+              alt="Theros By The Sea — Εστιατόριο στην Ανάβυσσο, Αττική με θέα στη θάλασσα"
               fill
               style={{ objectFit: 'cover' }}
               sizes="(max-width: 768px) 70vw, 36vw"
@@ -35,7 +35,7 @@ export default function About() {
           <div className="about-img-accent">
             <Image
               src="/images/6O1A5849.webp"
-              alt="Lounge χώρος"
+              alt="Lounge χώρος εστιατορίου στην Ανάβυσσο — Theros By The Sea"
               fill
               style={{ objectFit: 'cover' }}
               sizes="(max-width: 768px) 50vw, 29vw"

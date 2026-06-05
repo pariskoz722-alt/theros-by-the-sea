@@ -144,13 +144,13 @@ export default function ReviewsAdmin() {
                   onClick={() => toggleVisible(r)}
                   style={{ background: 'none', border: '1px solid var(--sand-dark)', fontSize: '.7rem', padding: '.35rem .6rem', cursor: 'pointer', color: 'var(--text-mid)' }}
                 >
-                  {r.visible ? '👁 Απόκρυψη' : '👁 Εμφάνιση'}
+                  {r.visible ? 'Απόκρυψη' : 'Εμφάνιση'}
                 </button>
                 <button
                   onClick={() => deleteReview(r.id)}
                   style={{ background: 'none', border: '1px solid #fca5a5', fontSize: '.7rem', padding: '.35rem .5rem', cursor: 'pointer', color: '#ef4444' }}
                 >
-                  🗑 Διαγραφή
+                  Διαγραφή
                 </button>
               </div>
             </div>

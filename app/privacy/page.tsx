@@ -38,7 +38,7 @@ export default function PrivacyPage() {
               σύμφωνα με τον Γενικό Κανονισμό Προστασίας Δεδομένων (ΓΚΠΔ / GDPR - ΕΕ 2016/679).
             </p>
             <p style={{ marginTop: '1rem' }}>
-              Email: <a href="mailto:info@therosbythesea.gr" style={{ color: 'var(--terracotta)' }}>info@therosbythesea.gr</a><br />
+              Email: <a href="mailto:theros1818@gmail.com" style={{ color: 'var(--terracotta)' }}>theros1818@gmail.com</a><br />
               Tel: <a href="tel:+302291036400" style={{ color: 'var(--terracotta)' }}>2291 036 400</a>
             </p>
           </Section>
@@ -112,7 +112,7 @@ export default function PrivacyPage() {
             </div>
             <p style={{ marginTop: '1rem' }}>
               Για άσκηση των δικαιωμάτων σας επικοινωνήστε μαζί μας στο{' '}
-              <a href="mailto:info@therosbythesea.gr" style={{ color: 'var(--terracotta)' }}>info@therosbythesea.gr</a>.
+              <a href="mailto:theros1818@gmail.com" style={{ color: 'var(--terracotta)' }}>theros1818@gmail.com</a>.
               Απαντάμε εντός <strong>30 ημερών</strong>.
             </p>
             <p style={{ marginTop: '.75rem' }}>
@@ -138,7 +138,7 @@ export default function PrivacyPage() {
             <div style={{ background: 'var(--sand)', padding: '1.25rem 1.5rem', marginTop: '1rem', borderLeft: '3px solid var(--terracotta)' }}>
               <strong>Theros By The Sea</strong><br />
               Λεωφ. Αθηνών Σουνίου 21, Ανάβυσσος 190 13<br />
-              info@therosbythesea.gr<br />
+              theros1818@gmail.com<br />
               2291 036 400
             </div>
           </Section>
